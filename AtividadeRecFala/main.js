@@ -1,9 +1,9 @@
 const SpeechRecognition = webkitSpeechRecognition;
 
 const recFala = new SpeechRecognition();
-const txtFala = document.getElementById("voiceOut");
+const txtFala = document.getElementById("txtOutput");
 
-function startVoice() {
+function voiceToText() {
     txtFala.innerHTML = "";
     recFala.start();
 }
